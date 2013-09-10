@@ -17,10 +17,16 @@ import java.io.OutputStreamWriter;
 
 public class MainActivity extends Activity {
 
+    private ProgressBar mProgress;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //set the progressbar
+        mProgress = (ProgressBar) findViewById(R.id.progress_bar);
+        mProgress.setVisibility(View.GONE);
 
         // Backup button
         final Button button_backup = (Button) findViewById(R.id.button_backup);
@@ -55,18 +61,18 @@ public class MainActivity extends Activity {
                     CharSequence text = "Backing Data up!";
                     int duration = Toast.LENGTH_LONG;
 
+                    mProgress.setVisibility(View.VISIBLE);
+
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
+
+                    mProgress.setVisibility(View.GONE);
 
                 } catch (IOException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
             }
-
-            ProgressBar mProgress = (ProgressBar) findViewById(R.id.progress_circular);
-            mProgress.setVisibility(View.VISIBLE);
-            mProgress.setVisibility(View.GONE);
         });
 
         // Restore button

@@ -1,10 +1,9 @@
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:gravity="top"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/background" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/app_intro"
@@ -29,8 +28,11 @@
         android:text="Restore Data" />
 
     <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content" />
+        android:layout_gravity="center"
+        android:visibility="gone"/>
 
     <Button
         android:id="@+id/button_installrec"
