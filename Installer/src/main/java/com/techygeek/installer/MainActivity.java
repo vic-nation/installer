@@ -61,12 +61,10 @@ public class MainActivity extends Activity {
                     CharSequence text = "Backing Data up!";
                     int duration = Toast.LENGTH_LONG;
 
-                    mProgress.setVisibility(View.VISIBLE);
-
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
 
-                    mProgress.setVisibility(View.GONE);
+                    mProgress.setVisibility(View.VISIBLE);
 
                 } catch (IOException e) {
                     // TODO Auto-generated catch block
