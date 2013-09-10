@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Installer/Installer.iml" filepath="$PROJECT_DIR$/Installer/Installer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recovery-InstallerProject.iml" filepath="$PROJECT_DIR$/recovery-InstallerProject.iml" />
+    </modules>
+  </component>
+</project>
+

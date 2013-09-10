@@ -1,0 +1,66 @@
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/app_intro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:text="@string/app_intro" />
+
+    <Button
+        android:id="@+id/button_backup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Backup Data" />
+
+    <Button
+        android:id="@+id/button_restore"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Restore Data" />
+
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <Button
+        android:id="@+id/button_installrec"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Flash CWM Recovery" />
+
+    <Button
+        android:id="@+id/button_rebootrec"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Reboot to Recovery" />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="@string/warning" />
+
+    <TextView
+        android:id="@+id/warning_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:text="@string/warning_info" />
+</LinearLayout>
